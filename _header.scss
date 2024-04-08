@@ -1,0 +1,84 @@
+.header{
+    background: $header-bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    padding-block: 10px;
+    .nav-left{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        .logo{
+            svg{
+                font-size: 30px;
+                color: white;
+            }
+        }
+        .search{
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input{
+                width: 300px;
+                height: 30px;
+                background: #3F4448;
+                border: none;
+                position: relative;
+                color: white;
+                text-indent: 10px ;
+                font-size: 12px;
+             }
+             input::placeholder{
+                font-size: 12px;
+                text-indent: 10px;
+             }
+            svg{
+                font-size: 24px;
+                color: white;
+                position: absolute;
+                margin-left: 270px;
+            }
+        }
+        .links{
+            color: white;
+            ul{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            flex-wrap: wrap;
+            li{
+                margin-left: 15px;
+                a{
+                    color: white;
+                    transition: all 0.4s ease;
+                    white-space: nowrap;
+                    &:hover{
+                        color: gray;
+                    
+                    }
+                }
+            }
+            }
+        }
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 10px;
+        :nth-child(2){
+                margin-inline: 10px;
+        }
+        svg{
+            color: #CCCCCC;
+            font-size: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            display: inline-block;
+            
+        }
+    }
+}
